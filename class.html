@@ -6,10 +6,462 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="class.css">
+
 
 </head>
 
 <body>
+    <!-- <div>
+        <h1>GUESS MY NUMBER GAME</h1>
+
+        <h2 class="qeenah" style="font-size: 32px; margin-left: 70px;">
+            Start Guessing......
+        </h2>
+
+        <input class="mynumber" placeholder="guess my number between 1 and 20"
+            style="text-align: center; padding: 5px; width: 400px; font-size: 24px;">
+
+        <h1 class="number" style="left: 70px; position: relative;">The number is ??</h1>
+
+        <button class="check" style="font-size: 32px; text-align: center; width: 200px; 
+        left: 100px; position: relative;">Check</button>
+
+        <button class="again" style="font-size: 28px; text-align: center; width: 200px; 
+        left: 100px; position: relative; display: none;">PLAY AGAIN</button>
+
+        <h1 class="highestscore" style="width: 500px; margin-left: 4%; padding: 20px; color: black;">Highest Score: <span id="high">0</span></h1>
+    </div>
+
+ -->
+
+
+
+
+
+
+
+    <!-- <img src="img/value.png" width="40%" height="40%"><br>
+<button onclick="bimbo()">On</button>
+<button onclick="sola()">Off</button> -->
+    <!-- <img src="img/bbPeace.png"> -->
+
+
+    <!-- <h1 id="para1">Welcome to valuemax</h1>
+    
+    <button onclick="joy ()">Change it</button> -->
+    <!-- 
+<div CLASS="container">
+    <div class="countries"></div>
+</div> -->
+    <!--  button onclick="joy(prompt('how old are you'),60)">check when to retire</button> -->
+
+
+    <!-- <h1>welcome</h1>
+<h1>to javascript</h1> -->
+
+    <!-- <input id="age">
+<span id="day"></span>
+<button onclick=ade()>submit</button> -->
+    <!-- <form name="form1">
+    username:<input type="text" name="text1">
+    <span id="put"></span>
+
+ <input type="submit" value="submit" onclick="return(inputlenght ())">
+</form> -->
+
+
+
+
+
+
+    <script>
+        //     function inputlenght(){
+        //     let field= document.form1.text1.value;
+        //     let minlength=6;
+        //     let maxlength=11;
+        //     if(field.length<6 || field.length>11){
+        //         document.querySelector('put').innerHTML=`please make sure your input is not less than ${minlengh} and more than ${maxlenght}`;
+        //         return false;
+        //     }
+
+        //     else{
+        //         document.querySelector('put').innerHTML='your input is acceptable';
+        //         return true;
+        //     }
+        // }
+
+
+
+
+        // function ade(){
+        //     let myAge=Number (document.querySelector('#age').value);
+        //     let text = document.querySelector('#day');
+        //     if(isNaN(myAge)|| !myAge){
+        //         text.innerHTML="invalid";
+        //         text.style.color="red";
+        //     }
+        //     else{
+        //         text.innerHTML='valid input';
+        //         text.style.color="green";
+        // }
+
+        // }
+
+
+        // let myAge= document.querySelector('#age').value;
+        // let btn=document.querySelector('button');
+        // btn.addEventListener('click', funtion(){
+        //     if(isNaN(myAge)|| !myAge){
+        //         myAge.innerHTML='your input must be number';
+        //         myAge.style.color="red";
+
+        //     }
+        // }
+        // )
+        // methods
+        // let x="victor";
+        // alert(x.match('io'));
+
+        // alert(min(5,2,7,8,3,10))
+
+        // let x=56.58724;
+        //     // alert(Math.floor(x))
+        //     // alert(Math.trunc(x))
+        //     alert(x.toFixed(2));
+
+
+        // let highestscore=document.querySelector('#high').innerHTML;
+        // const btn = document.querySelector('.check');
+        // btnagain = document.querySelector('.again');
+        // let myMessage = document.querySelector('.qeenah')
+        // let theNumber = document.querySelector('.number');
+        // let theBody = document.querySelector('body');      
+        // secretNumber = Math.trunc(Math.random() * 20) + 1;
+        // let score = 20;
+
+        // function scoreline () {
+        //     score = score - 4;
+        //     if (score == 0) {
+        //         myMessage.innerHTML = 'Game Over';
+        //         btn.style.display='none';
+        //         btnagain.style.display='inline-block';           
+        //         btn.style.backgroundColor='red'
+        //         btn.style.color = 'white';
+        //         document.querySelector('.mynumber').value = "";
+        //         theBody.style.backgroundColor = 'red'
+        //         theNumber.innerHTML=`The Number is ${secretNumber}`;
+        //     }
+        // }
+
+
+
+        //     let myEngine= function(){
+        //         let myGuess = Number(document.querySelector('.mynumber').value);
+
+        //         if(!myGuess || myGuess<1 || myGuess>20){
+        //             myMessage.innerHTML='your guess must be between 1 and 20 only';
+        //             myMessage.style.color="gold";
+        //             document.querySelector('.mynumber').value="";
+        //             scoreline();
+        //         }
+
+        //         else if(myGuess>secretNumber){
+        //             myMessage.innerHTML='your guess is too high';
+        //             myMessage.style.color="red";
+        //             document.querySelector('.mynumber').value="";
+        //             scoreline();
+        //         }
+
+        //         else if(myGuess<secretNumber){
+        //             myMessage.innerHTML='your guess is too low';
+        //             myMessage.style.color="blue";
+        //             document.querySelector('.mynumber').value="";
+        //             scoreline();
+        //         }
+
+        //         else if(myGuess==secretNumber){
+        //             myMessage.innerHTML=`correct, the number is ${secretNumber}`;
+        //             myMessage.style.color="yellow";
+        //             theBody.style.backgroundColor="green";
+        //             theBody.style.color="white";
+        //             theNumber.innerHTML=`SCORE: ${score}`;
+        //             theNumber.style.color='yellow';
+        //             document.querySelector('.mynumber').value="";
+        //             btn.style.display='none'
+        //             btnagain.style.display='inline-block';
+        //             document.querySelector('.mynumber').value='';
+
+        //             if(highestscore<score){
+        //                 document.querySelector('#high').innerHTML=score;
+        //             }
+        //         }
+
+
+        //     }
+
+        //     console.log(secretNumber)
+        // btn. addEventListener('click',myEngine);
+        // btnagain.addEventListener('click', function(){
+        //     myMessage.innerHTML='Start guessing......';
+        //     myMessage.style.color='black';
+        //     btn.style.display="inline-block"
+        //     btnagain.style.display="none"
+        //     btn.style.backgroundColor="white"
+        //     btn.style.color="black"
+        //     document.querySelector('.mynumber').value='';
+        //     theBody.style.backgroundColor='white';
+        //     theNumber.innerHTML=`The number is ??`;
+        //     score=20;
+        //     secretNumber=Math.trunc(Math.random()*20)+1;
+        //     theNumber.style.color='black';
+        // })
+
+
+
+        // Investment Calculator
+
+        // let a= Number(document.getElementById('input1').value);
+        // let b= Number(document.getElementById('input2').value);
+        // let c= document.getElementById('answer')
+        // let d= document.getElementById('symbol')
+
+        // let x= document.querySelectorAll('button')
+
+        // let k=document.querySelectorAll('h1');
+        // console.log(k)
+
+
+        // let days=['Sunday','Monday','Tuesday', 'Wednesday','Thursday','Friday','Saturday']
+        // for(let i=0; i<days.length; i++){
+        // alert(days[i]);
+        // }
+
+        // What to do in a week
+        let oneday = new Date().getDay();
+        let days=['Sunday','Monday','Tuesday', 'Wednesday','Thursday','Friday','Saturday']
+
+         if(oneday[days]=="0"){
+            alert(`Today is ${days[oneday]} Go to Church`)
+        }
+
+         else if(oneday[days]=="6"){
+            alert(`Today is ${days[oneday]} Go to Party`)
+        }
+
+        else if(oneday[days]=="5"){
+            alert(`Today is ${days[oneday]} Go to Mosque `)
+        }
+        else{
+            alert(`Today is ${days[oneday]} Go to work`)
+        }
+
+
+        // if (oneday[days]=="1"){
+        //     alert(`Today is ${days[oneday]} Go to work`)
+        // }
+
+
+        //     let oneday = new Date(). getDay();
+        // let days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday'];
+        //     for(let k=0; k<days.length; k++){
+
+        // alert(Today is `days[k]` go to church);
+        // }
+
+        // for(let i=1; i<20; i++){
+        //         if(i%2==1){
+        //             continue;
+        //         }
+        //         console.log(i)
+        //     }
+        // let n = prompt('enter any prime number from 1 to 70');
+        //         if(!n || n<1 || n>70){
+        //             alert(`invalid number, enter only a number from 1 to 70`);
+        //         }
+        //          else if(n==2){
+        //             alert(`correct ${n} is a prime number`);
+        //         }
+        //         else {
+        //             let i;
+        //             for (i=2; i<n; i++){
+        //                 if(n%i==0){
+        //                     alert(`you are wrong, ${n} is not a prime number`);
+        //                     break;
+        //                 }
+        //             }
+        //             if(n==i){
+        //                 alert(`correct ${n}, is a prime number`);
+        //             }
+        //         }
+
+
+
+        // for(let i=2; i<n.length; i++){
+
+        // let joy=0
+        // let i,j
+        // for(j=2; j<=70; j++){
+        //     for(i=1; i<=j; i++){
+        //         if(j%i==0)
+        //         joy++
+        //     }
+        //     if(joy==2)
+        //     console.log(j)
+        //     joy=0
+        // }
+        // let exercise=1;
+        // for(; exercise<4; exercise++){
+        //     console.log(`---starting exercise ${exercise}`);
+        //     for(let rep=1; rep<6; rep++){
+        //         console.log(`lifting weight repeat ${rep}`);
+        //     }
+
+        // }
+
+        // let kay=prompt('enter any even from 1 to 20');
+        //     for(let i=0; i<10; i++)
+        //         if(i%2==0){
+        //             alert(i)
+        //         }
+        //         else(` you are wrong`)
+
+        //     }
+        // let kay=prompt('give me an example of even number');
+        // for(let i=0; i<kay.length; i++){
+        //     if(kay%2==0){
+        //         alert(`correct, ${kay} is an even number`)
+        //     }
+
+
+        // }
+
+
+
+        // for(let i=0; i<10; i++){
+        //     if(i==5){
+        //         break;
+        //     }
+        //     alert(i)
+
+        // }
+        // let onedays = new Date(). getDay();
+        // let days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday'];
+        // for(let k=0; k<days.length; k++){
+
+        // alert(days[k]);
+        // }
+
+        //  
+        // console.log(days);
+
+        // let days=new Date(). getDay();
+        // console.log(days); 
+
+        // let days=new Date() 
+        // console.log(days);
+
+        //  let k=2;
+        //  do{
+        //     alert(k)
+        //     k++
+        //  }while(k<1)
+
+        //  let k=20;
+        //  while(k>=5){
+        //     alert(k);
+        //     k--
+        //  }
+
+
+        // for(let i=0;i<10; i++){
+        //     alert(`number${i}`)
+        // }
+
+        // let i=0;
+        //     for(; i<5; i++){
+        //         alert(i);
+        //     }
+        //     alert(i);
+
+        //     let days=['Sunday','Monday','Tuesday', 'Wednesday','Thursday','Friday','Saturday']
+        //     for(let i=0; i<days.length; i++){
+        //         alert(days[i]);
+        //     }
+        //     let myname='Sekinat'
+        //  alert(myname.length)
+
+
+
+
+        //  let a = document.querySelector('img') 
+        //     function bimbo(){
+        //         a.src="img/project.png"
+        //     }
+        //     function sola(){
+        //         a.src="img/value.png"
+        //     }
+
+        // function joy(){
+        // let a=document.getElementById("para1").style.backgroundColor="red";
+        // a.innerHTML='This is javascript class'
+        // }
+
+
+
+
+        // function joy(){
+        //     const currentAge=prompt('how old are you ?');
+        //     const retirementAge=60;
+
+        //     const yearsUntillretirement=retirementAge-currentAge;
+        //     if(yearsUntillretirement<0){yearsUntillretirement=yearsUntillretirement*-1
+        //         alert(`you ought to have retired ${yearsUntillretirement} years ago,what are you still doing in service, please report yourself immediately`)
+        // }
+
+        // else{
+        //     alert(`you have ${yearsUntillretirement} years more to retire from teaching`)
+        // }
+        // }
+        //     alert(`you have ${yearsUntillretirement} years more to retire from teaching`)
+
+        // let joy=function(){
+        //     const currentAge=prompt('how old are you ?');
+        //     const retirementAge=60;
+
+        //     const yearsUntillretirement=retirementAge-currentAge;
+        //     if(yearsUntillretirement<0){yearsUntillretirement=yearsUntillretirement*-1
+        //         alert(`you ought to have retired ${yearsUntillretirement} years ago,what are you still doing in service, please report yourself immediately`)
+        // }
+
+        // else{
+        //     alert(`you have ${yearsUntillretirement} years more to retire from teaching`)
+        // }
+
+
+        // alert(`you have ${yearsUntillretirement} years more to retire from teaching`)
+
+        // }
+        // const joy=currentAge=>{
+        //     // const currentAge=prompt('how old are you ?');
+        //     const retirementAge=60;
+        //     // const yearsUntillretirement=retirementAge-currentAge;
+        //     let yearsUntillretirement=retirementAge-currentAge
+        //     if(yearsUntillretirement<0){yearsUntillretirement=yearsUntillretirement*-1
+        //         alert(`you ought to have retired ${yearsUntillretirement} years ago,what are you still doing in service, please report yourself immediately`)
+        // }
+
+        // else{
+        //     alert(`you have ${yearsUntillretirement} years more to retire from teaching`)
+        // }
+
+        //     alert(`you have ${yearsUntillretirement} years more to retire from teaching`)
+
+        // }
+    </script>
+
+
+
     <!-- <p id="money">
         welcome to javascript class
     </p>
@@ -19,33 +471,70 @@
 
     <p id="new"></p> -->
 
-<!-- <h1>
+    <!-- <h1>
    Input your Age
 </h1>
 <input type="text" id="food" required>
 <button onclick="joy()">Apply</button>
-<p id="sekinat"></p> -->
+<p id="sekinat"></p> 
+
+     <script>
+
+    // TENARY OPERATOR
+    function joy() {
+        let age=document.getElementById("food").value
+        let apply=(age<18)?"You are not Qualified":"Congratulation O ti ri Se"
+
+        document.getElementById("sekinat").innerHTML=apply
+
+    } -->
+
+    <!-- let score=30
+    let result=(score>25)?"pass":"fail"
+    document.getElementById("new").innerHTML=result
+            // TENARY OPERATOR END
 
 
 
+// SWITCH
 
-    <script>
+        // let a=prompt("how old is Nigeria")
+        // let b=Number(a)
+        // switch (b) {
+        //     case 62:
+        //         alert("you are close")
+                
+        //         break;
+        //     case 63:
+        //         alert("you are correct")
+                
+        //         break;
+        //     case 64:
+        //         alert("you are more than it")
+                
+        //         break;
+        //     default:
+        //         alert("you are wrong")
+        //         break;
+        
+
+        // SWITCH END
 
             // IF/ELSE
-                let age=prompt("how old are you")
-                let gender=prompt('Specify your Gender')
-                if (age>=22&&gender=="male") {
-                    alert("you are qualified")
+                // let age=prompt("how old are you")
+                // let gender=prompt('Specify your Gender')
+                // if (age>=22&&gender=="male") {
+                //     alert("you are qualified")
                     
-                }
-                else if(age>=18&&gender=="female"){
-                    alert('See the boss')
-                }else if(age>=18){
-                    alert('Come back next year')
-                }
-                 else {
-                    alert("you are too young")
-                }
+                // }
+                // else if(age>=18&&gender=="female"){
+                //     alert('See the boss')
+                // }else if(age>=18){
+                //     alert('Come back next year')
+                // }
+                //  else {
+                //     alert("you are too young")
+                // }
 
         
 
@@ -54,26 +543,9 @@
 
 
 
+ -->
 
-            // TENARY OPERATOR
-    // function joy() {
-    //     let age=document.getElementById("food").value
-    //     let apply=(age<18)?"You are not Qualified":"Congratulation O ti ri Se"
-
-    //     document.getElementById("sekinat").innerHTML=apply
-
-    // }
-
-    // let score=30
-    // let result=(score>25)?"pass":"fail"
-    // document.getElementById("new").innerHTML=result
-            // TENARY OPERATOR END
-
-
-
-
-
-
+    <!-- 
     // let a=5
     // let b=5
     // let c=a+b
@@ -130,12 +602,9 @@
 
         // let x=Number("joy")
         // alert(x)
-        // alert(typeof(x))
+        // alert(typeof(x)) -->
+    <!-- </script> -->
 
-
-
-
-    </script>
 </body>
 
 </html>
